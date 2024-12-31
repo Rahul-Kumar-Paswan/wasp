@@ -19,7 +19,6 @@ pipeline {
                     scp -o StrictHostKeyChecking=no -r wasp/EmployeeInformation.war ec2-user@ec2-65-2-150-136.ap-south-1.compute.amazonaws.com:/home/ec2-user/source/
                     ssh -o StrictHostKeyChecking=no ec2-user@ec2-65-2-150-136.ap-south-1.compute.amazonaws.com <<EOF
                     echo "Files copied successfully. Listing the directory contents:"
-                    ls -l /home/ec2-user/wasp
                     '''
                 }
             }
